@@ -2,7 +2,7 @@ const teachers = ["Nathan", "Ed", "Fabio", "Phil", "Carlo", "Lewis", "Luca"]; //
 
 // 1. Inverti l'ordine degli insegnanti nell'array teachers
 // e salva il risultato nella variabile reversedTeachers
-/* metodi array */
+/*  metodo array  */
 const reversedTeachers = teachers.reverse();
 console.log(reversedTeachers);
 
@@ -11,10 +11,17 @@ console.log(reversedTeachers);
 const longNames = null;
 
 // 3. Rimuovi 'Ed' dall'array teachers
+/* metodo array */
+teachers.splice(5, 1);
+console.log(teachers);
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
-const isFabioPresent = null;
+/* metodo array */
+const isFabioPresent = teachers.includes("Fabio");
+console.log(isFabioPresent);
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
-const teachersString = null;
+/* Metodo array */
+const teachersString = teachers.join(",");
+console.log(teachersString);
